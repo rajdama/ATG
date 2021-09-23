@@ -1,38 +1,237 @@
-.App {
+.navbar{
+  position: absolute;
+width: auto;
+height: auto;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.searchbox{
+  position: absolute;
+width: 360px;
+height: 40px;
+left: 650px;
+top: 10px;
+
+background: #F2F2F2;
+border-radius: 21px;
+
+}
+
+.computer_img{
+  
+width: 100%;
+height: 70vh;
+
+
+}
+
+.img_div{
+  position: relative;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  /* object-fit: cover; */
+  
 }
 
-.App-link {
-  color: #61dafb;
+.bottom-left-desktop {
+  position: absolute;
+  bottom: 80px;
+  left: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottom-left-mobile {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.show{
+  display: block;
+}
+
+.hidden{
+  display: none;
+  /* background-color: black; */
+}
+
+.eye{
+font-family: IBM Plex Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+
+
+}
+
+#join{
+  width:100px;
+color: white;
+border: 2px solid white;
+}
+#form-button_1{
+  
+  width: 320px;
+  height: 40px;
+  left: 388px;
+  top: 515px;
+  text-align: center;
+  background: #2F6CE5;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+#form-button_2{
+  
+  width: 320px;
+  height: 38px;
+  left: 388px;
+  top: 579px;
+  color:black;
+  background: #FFFFFF;
+  border: 0.6px solid #D9D9DB;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+#forgot{
+  
+  width: 320px;
+  height: 38px;
+  left: 388px;
+  top: 579px;
+  color:black;
+  background: #FFFFFF;
+  border: 0.6px solid white;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+#card_btn{
+  width: 100%;
+  height: 38px;
+  left: 220px;
+  top: 1956px;
+  color: orange;
+  background: #FFFFFF;
+  border: 0.7px solid #A9AEB8;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+#follow{
+  width: 60px;
+  height: 24px;
+  left: 1175px;
+  top: 391px;
+  
+font-family: IBM Plex Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height */
+
+text-align: center;
+
+  background: #EDEEF0;
+  border-radius: 14px;
+  
+}
+.register-photo {
+ 
+    padding: 100px 0
+}
+
+.register-photo .image-holder {
+    display: table-cell;
+    width: auto;
+    background: url("./images/form_img.png");
+    background-size: cover
+}
+
+.register-photo .form-container {
+    display: table;
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+}
+
+.register-photo form {
+    display: table-cell;
+    width: 400px;
+    background-color: #ffffff;
+    padding: 40px 60px;
+    color: #505e6c
+}
+
+@media (max-width:991px) {
+    .register-photo form {
+        padding: 40px
+    }
+}
+
+.register-photo form h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px
+}
+
+.register-photo form .form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 0px;
+    height: 40px
+}
+
+.register-photo form .form-check {
+    font-size: 13px;
+    line-height: 20px
+}
+
+/* .register-photo form .btn-primary {
+    background: green;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: none !important
+} */
+
+/* .register-photo form .btn-primary:hover,
+.register-photo form .btn-primary:active {
+    background: green
+} */
+
+.register-photo form .btn-primary:active {
+    transform: translateY(1px)
+}
+
+.register-photo form .already {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none
 }
